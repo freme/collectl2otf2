@@ -1,0 +1,12 @@
+#!/bin/bash
+
+OS=`uname`
+
+if [ "${OS}" == "Darwin" ]; then
+    date -j -f '%Y%m%d %H:%M:%S' "$1 $2" +%s
+fi
+
+if [ "${OS}" == "Linux" ]; then
+    date -d "$1 $2" +%s
+fi
+

@@ -1,0 +1,7 @@
+!#/bin/bash
+
+FNAME=y-taurusi1257-20150127-154526.raw.gz
+
+./bin/collectl -f csv --plot --playback ${FNAME} --subsys Z --sep ,
+
+
